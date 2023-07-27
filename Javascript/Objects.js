@@ -6,3 +6,7 @@ const user = {
 }
 
 console.log(user.name)
+
+// Modify name property
+user.name = "Beginner coder"
+console.log(user.name)
