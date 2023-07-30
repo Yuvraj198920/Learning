@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# Getting Started with Create React App showing weather data for any city
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Its using openweather map api to show realtime weather data
 
 ## Available Scripts
 
