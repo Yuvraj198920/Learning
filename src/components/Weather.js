@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { TextField, Button, Card, CardContent, Typography } from "@mui/material";
 
 const Weather = () => {
     const[city, setCity] = useState('');
@@ -16,15 +17,17 @@ const Weather = () => {
     };
 
     return (
-        <div>
-            <input type="text" onChange={(e) => setCity(e.target.value)} />
-            <button onClick={getWeather}>Get Weather</button>
+        <div style={{display: 'flex', flexDirection: 'column', alignItems:'center', justifyContent: 'center', height: '100vh', backgroundColor: '#f5f5f5'}}>
+            <TextField label="City" variant="outlined" onChange={(e) => setCity(e.target.value)} style={{ marginBottom: '20px' }} />
+            <Button variant="contained" color="primary" onClick={getWeather}>Get Weather</Button>
             {weather && (
-                <div>
-                    <h3>{weather.data.name}</h3>
-                    <p>{weather.data.main.temp}</p>
-                    <p>{weather.data.weather[0].description}</p>
-                </div>
+                <Card style={{ marginTop: '20px', width: '300px' }}>
+                    <CardContent>
+                    <Typography variant="h5" component="h2">{weather.data.name}</Typography>
+                    <Typography color="textSecondary">{(weather.data.main.temp - 273.15).toFixed(2)}°C</Typography>
+                    <Typography variant="body2" component="p">{weather.data.weather[0].description}</Typography>
+                    </CardContent>
+                </Card>
             )}
         </div>
     )
