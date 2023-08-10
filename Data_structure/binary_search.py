@@ -16,10 +16,10 @@ def binary_search (arr, low, high, target):
         # if mid is the target element
         if arr[mid] == target:
             return mid
-        # if the target elemet is lesser than mid then it is in the right portion of the array
+        # if the target elemet is lesser than mid then it is in the left portion of the array
         elif arr[mid] > target:
             return binary_search(arr, low, mid-1, target)
-        # if the target elemet is greater than mid then it is in the left portion of the array
+        # if the target elemet is greater than mid then it is in the right portion of the array
         else:
             return binary_search(arr, mid+1, high, target)
     else:
