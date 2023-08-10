@@ -22,6 +22,7 @@ def binary_search (arr, low, high, target):
         # if the target elemet is greater than mid then it is in the right portion of the array
         else:
             return binary_search(arr, mid+1, high, target)
+    # if target element not found 
     else:
         return -1
     
