@@ -31,7 +31,7 @@ class LinkedList:
 
 
 contact_list = LinkedList()
-contact_list.add_contact("Yuvraj", "7028555029")
-contact_list.add_contact("Yuvraj_singapore", "84698214")
+contact_list.add_contact("Yuvraj", "132546784534")
+contact_list.add_contact("Yuvraj_singapore", "2534633452")
 contact_list.add_contact("Suraj", "123343432")
 contact_list.display_contacts()
