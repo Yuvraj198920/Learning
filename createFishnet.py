@@ -3,7 +3,7 @@ from osgeo import ogr, osr
 import math
 import os
 
-raster = r"Data\Extract_basin.tif"
+raster = r"pythonenv\Learning\Data\Extract_basin.tif"
 
 open_raster = gdal.Open(raster, gdal.GA_ReadOnly)
 
