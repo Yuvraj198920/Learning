@@ -3,6 +3,7 @@ import EsriMap from 'arcgis-js-api/Map';
 import MapView from 'arcgis-js-api/views/MapView';
 import "./myMap.css"
 import EsriBookmark from './EsriBookmark';
+import SearchAddress from './SearchAddress';
 
 const MyMap = () => {
     const mapDiv = useRef(null);
@@ -27,6 +28,7 @@ const MyMap = () => {
         <div>
             <div className='mapDiv' ref={mapDiv}></div>
             {view && < EsriBookmark view={view}/>}
+            {view && < SearchAddress view={view}/>}
         </div>
     ) 
     
