@@ -5,6 +5,7 @@ import "./myMap.css"
 import EsriBookmark from './EsriBookmark';
 import SearchAddress from './SearchAddress';
 import BasemapGalleryWidget from './BasemapGalleryWidget';
+import DirectionWidget from './Directions';
 
 const MyMap = () => {
     const mapDiv = useRef(null);
@@ -31,6 +32,7 @@ const MyMap = () => {
             {view && < EsriBookmark view={view}/>}
             {view && < SearchAddress view={view}/>}
             {view && < BasemapGalleryWidget view={view}/>}
+            {view && < DirectionWidget view={view}/>}
         </div>
     ) 
     

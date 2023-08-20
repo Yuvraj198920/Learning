@@ -1,9 +1,7 @@
 def bubble_sort(ar):
     n = len(arr)
-
     # Traverse through all array elements
     for i in range(n):
-
         # Last i elements are already in place
         for j in range(0, n-i-1):
             # swap if the element found is greater
