@@ -8,7 +8,6 @@ const EsriBookmark = ({ view }) => {
         if (existingWidget) {
             return;
         }
-
         // create the bookmark widget
         const bookmarkwidget = new Bookmarks({
             view: view,
