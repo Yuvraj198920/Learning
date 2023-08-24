@@ -9,9 +9,9 @@ function App() {
     fetch("https://randomuser.me/api").then((res) => {
       return res.json()
     }).then(data => {
-      const stringFy = JSON.stringify(data)
+      // const stringFy = JSON.stringify(data)
       console.log(data)
-      setData(stringFy)
+      setData(data)
     })
   }
 
@@ -35,9 +35,12 @@ function App() {
       }}>FetchData</button>
 
       <div>
-        <pre>
-          {data}
-        </pre>
+        <ul>
+        {data.map(elem => {
+          <ul key={elem.cell}>{elem.first}</ul>
+        })}
+        </ul>
+
       </div>
     </div>
   );
