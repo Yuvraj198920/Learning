@@ -41,7 +41,7 @@ const Weather = () => {
 
             {weather && (
                 <div>
-                    <Card style={{ marginTop: '20px', width: '300px' }}>
+                    <Card style={{ marginTop: '20px' }}>
                         <CardContent>
                             <Typography variant="h5" component="h2">{weather.data.name}</Typography>
                             <Typography color="textSecondary">{(weather.data.main.temp - 273.15).toFixed(2)}°C</Typography>
@@ -49,7 +49,7 @@ const Weather = () => {
                         </CardContent>
                     </Card>
 
-                    <div style={{height: '300px', width:'300px', marginTop: '20px'}}>
+                    <div style={{height: '300px', marginTop: '20px'}}>
                         <LeafletMap lat={weather.data.coord.lat} lon={weather.data.coord.lon}/>
                     </div>
 
