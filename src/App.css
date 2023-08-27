@@ -7,3 +7,16 @@
   display: flex;
   gap: 10px;
 }
+
+.column{
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid grey;
+  
+}
+
+.task {
+  margin: 5px;
+  padding: 5px;
+  background-color: lightgrey;
+}

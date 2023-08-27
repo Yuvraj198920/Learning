@@ -9,6 +9,7 @@ function App() {
 
   return (
     <div className="app">
+      <h1>Kanban Board</h1>
       <Board stages={stages} tasks={tasks}/>
     </div>
   );
