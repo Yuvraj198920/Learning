@@ -1,11 +1,12 @@
 import React from "react";
-import Column from "./Column";
+import Stage from "./Stage";
 
-const Board = ({stages, tasks}) => {
+function Board ({stages, tasks}) {
+
     return (
-        <div>
+        <div className="Board">
             {stages.map((stage, index) => {
-                <Column key={index} stage={stage} tasks={tasks}/>
+                return <Stage key={index} stage={stage} tasks={tasks}/>
             })}
         </div>
     )

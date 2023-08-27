@@ -1,0 +1,9 @@
+.app {
+  display: flex;
+  align-items: center;
+}
+
+.Board {
+  display: flex;
+  gap: 10px;
+}

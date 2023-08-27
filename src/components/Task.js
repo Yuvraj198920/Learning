@@ -1,8 +1,8 @@
 import React from "react";
 
-const Task = ({task}) =>{
+function Task ({ task }) {
     return (
-        <div className="">{task}</div>
+        <div className="task">{task}</div>
     )
 }
 
