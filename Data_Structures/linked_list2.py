@@ -1,5 +1,5 @@
 class Node:
-    def __init__(self, data=None, next=None) -> None:
+    def __init__(self, data=None, next=None):
         self.data = data
         self.next = next
 
@@ -21,6 +21,23 @@ class LnkedList:
         cur = self.head
         total = 0
         while cur.next != None:
-            cur = cur.next
             total+=1
+            cur = cur.next
+            
         return total
+    
+    def display(self):
+        cur = self.head
+        elem = []
+        while cur.next != None:
+            elem.append(cur.data)
+            cur = cur.next
+
+        return elem
+    
+linkedList = LnkedList()
+linkedList.append(1)
+linkedList.append(1)
+
+print(linkedList.display())
+print(linkedList.length())
