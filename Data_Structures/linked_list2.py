@@ -5,10 +5,13 @@ class Node:
 
 class LnkedList:
     def __init__(self):
-        self.head = Node()
+        self.head = None
 
     def append(self, data):
         new_node = Node(data)
+        if self.head is None:
+            self.head = new_node
+            return
         cur = self.head
         # Loop through linked list to reach at the end
         while cur.next != None:
@@ -37,7 +40,7 @@ class LnkedList:
     
 linkedList = LnkedList()
 linkedList.append(1)
-linkedList.append(1)
+linkedList.append(2)
 
 print(linkedList.display())
 print(linkedList.length())
