@@ -14,5 +14,13 @@ class LnkedList:
         while cur.next != None:
             cur = cur.next
 
-            # Now you are at the end of list append your new node
+        # Now you are at the end of list append your new node
         cur.next = new_node
+    
+    def length(self):
+        cur = self.head
+        total = 0
+        while cur.next != None:
+            cur = cur.next
+            total+=1
+        return total
